@@ -1,3 +1,5 @@
+echo "127.0.0.1 $HOSTNAME" >> /etc/hosts
+yum install iproute-tc -y
 yum install docker -y
 systemctl enable docker.service
 systemctl start docker.service
